@@ -29,7 +29,7 @@ Choose between:
 - **Bill-to-Bill Mode** (cost increases only when charges actually occur)
 - **Future Obligations Mode** (how much you will owe between now and any date you hover)
 
-This visualization reveals your financial “pressure zones” so you can plan ahead.
+This visualization reveals your financial "pressure zones" so you can plan ahead.
 
 ---
 
@@ -91,20 +91,29 @@ Download the latest release `.exe` from the **Releases** page on GitHub and run 
 ```bash
 npm install
 npm run tauri dev
+```
+
 Build production desktop app:
 
-bash
-Copy code
+```bash
 npm run tauri build
-🤝 Contributing
+```
+
+---
+
+## 🤝 Contributing
 Contributions are welcome!
 Open an issue, suggest features, or submit a pull request.
 
-📜 License
+---
+
+## 📜 License
 MIT License — free for personal and commercial use.
 Attribution appreciated but not required.
 
-❤️ Why This Exists
+---
+
+## ❤️ Why This Exists
 This project was created to alleviate subscription/bill anxiety by making financial timelines visual instead of abstract.
 
 Seeing your upcoming expenses laid out across months can turn chaos into clarity.
