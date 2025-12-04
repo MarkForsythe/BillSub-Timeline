@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# BillSub Timeline
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, visual, timeline-based bill and subscription tracker designed to reduce financial anxiety and help you understand your recurring expenses over time.
 
-## Available Scripts
+Most budgeting apps show lists and charts. **BillSub Timeline shows your money across time**, letting you *see* when charges land, how they stack, how trials become paid plans, and how your total financial load changes from day to day.
 
-In the project directory, you can run:
+Built with React + Tauri (desktop app).
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌟 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🗓️ Timeline-Based View  
+Subscriptions and bills are displayed on a horizontal multi-month timeline that makes it easy to see:
 
-### `npm test`
+- Due dates  
+- Clustering (multiple bills on the same day)  
+- Trial → active transitions  
+- Future price changes  
+- Canceled subscriptions still running through end-of-cycle  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+### 📊 Cumulative Cost Chart  
+A top-of-screen interactive chart shows how your expenses accumulate over time.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Choose between:
+- **Linear Accrual Mode** (smooth increasing cost, pro-rated daily)
+- **Bill-to-Bill Mode** (cost increases only when charges actually occur)
+- **Future Obligations Mode** (how much you will owe between now and any date you hover)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This visualization reveals your financial “pressure zones” so you can plan ahead.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+### 💡 Smart Hover Indicators  
+Hovering over any point in the timeline shows:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Total cost up to that point (mode dependent)
+- Which bills are active
+- A per-item tooltip showing details of each subscription
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🎛️ Flexible Cost Modes  
+Choose how the cost should be represented:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. **Bill Hit Mode**  
+   Shows charges exactly when they occur.
 
-## Learn More
+2. **Linear/Accrual Mode**  
+   Shows cost accumulating smoothly across a billing cycle.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Future-Only Mode**  
+   Shows only the amount you still owe from today forward.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+### 🌙 Dark Mode  
+Automatic theme persistence using app storage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+### 💾 Local Storage Persistence  
+All your subscriptions and settings are stored locally. No accounts, no cloud required.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+### ⚠️ Trial & Renewal Warnings  
+BillSub Timeline highlights:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Free trials ending soon  
+- Price increases  
+- Subscriptions set to auto-cancel  
+- Upcoming heavy financial periods  
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 🛠️ Installation
 
-### Deployment
+### Windows  
+Download the latest release `.exe` from the **Releases** page on GitHub and run it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### macOS / Linux  
+(Tauri build instructions will be added in future updates.)
 
-### `npm run build` fails to minify
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🚀 Running from Source
+
+```bash
+npm install
+npm run tauri dev
+Build production desktop app:
+
+bash
+Copy code
+npm run tauri build
+🤝 Contributing
+Contributions are welcome!
+Open an issue, suggest features, or submit a pull request.
+
+📜 License
+MIT License — free for personal and commercial use.
+Attribution appreciated but not required.
+
+❤️ Why This Exists
+This project was created to alleviate subscription/bill anxiety by making financial timelines visual instead of abstract.
+
+Seeing your upcoming expenses laid out across months can turn chaos into clarity.
+
+If this app helps you, consider starring the repo or sharing it with someone who might benefit.
